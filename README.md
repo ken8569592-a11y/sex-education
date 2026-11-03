@@ -1,33 +1,25 @@
-# 性健康教育平台 LLM Wiki
+# 性健康教育 LLM Wiki
 
-這是依 Karpathy LLM Wiki 思路建立的繁體中文專案骨架：人選擇來源，AI 把來源整合為可累積的知識頁，再由人審閱後供網頁使用。
+以中文AGENTS規則維護知識庫，並衍生筆記、逐頁稿與溫暖教育型HTML簡報。正文只依Wiki已收錄來源，建議文獻分區列示。
 
-## 開始使用
-1. 將整個資料夾交給可讀寫檔案的 AI 開發工具，請它先讀 AGENTS.md。
-2. 將合法取得、無個資的來源放入私人環境的 raw 對應資料夾。
-3. 請 AI：「依 AGENTS.md 匯入這份來源，完成來源摘要、更新主題頁、索引與紀錄；不要把草稿發布。」
-4. 查詢範例：「先讀 Wiki，再回答某主題的教育需求；證據不足請列入 gaps。」
-5. 維護範例：「執行 lint，檢查來源、連結、衝突與過時內容，列出需要人工審閱的頁面。」
+- [公開展示](https://sexual-health-wiki-classroom.lucky-pear-8620.chatgpt.site/)
+- [展示首頁](site/index.html)
+- [中文協作規則](AGENTS.md)
+- [繳交說明](docs/assignment-submission.md)
 
-## 檔案配置
-| 路徑 | 功能 |
-| --- | --- |
-| AGENT.md、AGENTS.md | 中文入口與完整協作規則 |
-| raw/ | 原始資料，新增後保持不變 |
-| wiki/index.md | 知識目錄 |
-| wiki/log.md | 只追加的操作紀錄 |
-| wiki/sources/ | 來源摘要 |
-| wiki/topics/、concepts/ | 主題及概念 |
-| wiki/qa/、syntheses/ | 可重用問答與跨來源整合 |
-| templates/ | 五種知識頁與教育單元模板 |
-| docs/ | 工作流程、專案狀態與後續網頁規劃 |
-| scripts/lint_wiki.py | 檢查本地連結、索引與必要欄位 |
-| site/ | 待開發網頁的說明，尚無網站程式 |
+## 使用
+直接開啟 index.html 即可瀏覽；需保留 site/assets。公式引擎隨專案保存。無API金鑰、帳號或後端依賴。
 
-## 檢查
-在專案根目錄執行 `python3 scripts/lint_wiki.py`，只需 Python 3 標準函式庫。
+## GitHub 上傳與 Pages
+建立新的公開Repository，將本資料夾內所有檔案上傳至根目錄並提交。Repository內應直接看見AGENTS.md、index.html與site/，不要再包一層資料夾。
+Settings → Pages → Deploy from a branch → main / root → Save。等待部署完成後，複製GitHub顯示的實際網址。
+老師允許其他網站發布方式，因此上方公開展示網址也可作為網站成果；仍需另交實際GitHub Repository連結。
 
-## GitHub 與網站
-目前是內容與規則骨架，尚未上傳 GitHub、建置網站或部署。先於私人倉庫整理及審閱，之後只將可公開且已審閱的內容輸出至網頁；不要直接把整個私人知識庫開成公開倉庫。
+## 新增內容
+先讀AGENTS.md，依raw → wiki → notes → slides → presentations/site流程。公開包不包含原始全文，來源請循DOI取得。勿將私人全文直接上傳。
 
-參考：[Karpathy 的 LLM Wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f)。本專案非其官方產品；原始參考附件保存於 raw/project/。
+## 驗證
+執行 python3 scripts/lint_wiki.py。瀏覽器已檢查首頁、翻頁、講稿與公式；未在實體手機或印表機驗證。
+
+## 第三方
+KaTeX 0.16.11 採MIT授權，LICENSE隨site/assets/katex保留。教育內容為待審閱課程展示。
