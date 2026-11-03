@@ -1,0 +1,10 @@
+__pycache__/
+.env
+.env.*
+!.env.example
+raw/papers/*
+raw/guidelines/*
+raw/web/*
+raw/assets/*
+!raw/**/.gitkeep
+.DS_Store

@@ -1,0 +1,15 @@
+# SRC-0001 保存紀錄
+- 原始附件名稱：沒有同意就是性侵（only YES means YES）－全球女權運動「積極同意」的倡議、教育與立法推動.pdf
+- 作者：林美薰、吳姿瑩
+- 發表年：2018
+- DOI：https://doi.org/10.6256/FWGS.2018.108.20
+- 匯入日期：2026-11-03
+- 原附件Library識別：libfile_59a6bcebd9388191a70af8e7a20fcaa6
+- PDF頁數：10；印刷頁碼：20–29
+- 位元組數：3667591
+- SHA-256：ecb93dbca6403d62dcce537a34ac09c7defe0c9fcc025075be9e09cd9beffcfa
+- 保存方式：原檔複製，未修復、未改寫；雜湊比對一致。
+- 抽取方式：pdftotext -layout。解析器提示xref問題並成功重建；抽取文字含雙欄及斷行，不保證閱讀順序或圖片內容完整，PDF為準。
+- 可讀範圍：已閱讀全篇抽取文字並渲染確認首頁。
+- 權利：未確認全文公開再散布授權，限私人專案保存；不得推送全文至公開GitHub或網站。
+- 來源摘要：[來源筆記](../../wiki/sources/lin-wu-2018-affirmative-consent.md)
